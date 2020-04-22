@@ -52,6 +52,7 @@ function App() {
 
     function handleClear() {
         setMouseDown(false);
+        setPrediction(null);
         const ctx = canvasEl.current.getContext("2d");
 
         ctx.clearRect(0, 0, canvasEl.current.width, canvasEl.current.height);
