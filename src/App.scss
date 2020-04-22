@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap");
+
+$primaryColor: #fae787;
+$secondaryColor: #2f3061;
+$lightColor: #f7fff7;
+$darkColor: #30343f;
+$accentColor: #344966;
+
+body {
+    background-color: $secondaryColor;
+}
+
+.app {
+    font-family: "Manrope", sans-serif;
+    width: 50%;
+    margin: auto;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    * {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #title {
+        color: $lightColor;
+    }
+
+    #hint {
+        color: $primaryColor;
+    }
+
+    #prediction {
+        color: $primaryColor;
+
+        #number {
+            font-weight: 700;
+        }
+    }
+
+    #github svg {
+        fill: $primaryColor;
+    }
+
+    canvas {
+        border-style: solid;
+        border-radius: 10px;
+        border-color: $primaryColor;
+    }
+
+    button {
+        background-color: $primaryColor;
+        border: none;
+        color: $accentColor;
+        border-radius: 2px;
+        margin-top: 2em;
+        padding: 0.4rem 2rem;
+        font-size: large;
+
+        text-transform: lowercase;
+    }
+}
+
+:export {
+    primaryColor: $primaryColor;
+}
