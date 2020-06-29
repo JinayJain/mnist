@@ -1,6 +1,6 @@
 {
     "name": "app",
-    "homepage": "http://jinayjain.github.io/mnist",
+    "homepage": "http://jinayjain.github.io/digit-recognizer",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
